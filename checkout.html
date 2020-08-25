@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電商甜點_多頁RWD_checkout</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;700;900&display=swap" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="crossorigin="anonymous"></script>    
+    <script src="js/all.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header mb-5">
+            <button class="menu-toggler"><img src="https://hexschool.github.io/webLayoutTraining1st/student-week1/dehaze-24px.png" alt="dehaze"></button>
+            <h1><a class="logo" href="index.html">Sweetaste</a></h1>
+            <div class="header-collapse">
+                <ul class="menu">
+                    <li class="menu-item"><a href="#">首頁</a></li>
+                    <li class="menu-item"><a href="#">甜點</a></li>
+                    <li class="menu-item"><a href="#">登入</a></li>
+                </ul>
+                <a class="header-link" href="#"><img src="https://hexschool.github.io/webLayoutTraining1st/student-week1/shopping_cart.png" alt="shopping_cart"></a>
+            </div>
+        </div>
+        <div class="content-checkout d-flex">
+            <div class="col-l">
+                <div class="row1 title d-flex mb-4">
+                    <h2>發票</h2>
+                    <ul>
+                        <li><span class="material-icons md-light">check_circle</span></li>
+                        <li><span class="material-icons md-light">check_circle</span></li>
+                        <li><span class="material-icons md-light">radio_button_checked</span></li>
+                    </ul>
+                </div>
+                <ul class="row1 choices d-flex mb-4">
+                    <li><a href="#" class="invoice-e">電子發票</a></li>
+                    <li><a href="#"  class="invoice-mail">郵寄發票</a></li>
+                </ul>
+                <form action="#" class="row1 mb-4">
+                    <div class="form-address mb-2">
+                        <h3 class="mb-1">電子郵件信箱</h3>
+                        <input type="email" name="" id="" placeholder="example@email.com">
+                    </div>
+                    <div class="form-num">
+                        <h3 class="mb-1">統一編號(選填)</h3>
+                        <input type="text" name="number" placeholder="12345678">
+                    </div>
+                </form>
+                <button type="submit" class="submit"><a href="#">確認結帳</a></button>
+            </div>
+            <div class="col-r">
+                <div class="list-order mb-3">
+                    <h2 class="title">訂單摘要</h2>
+                    <ul>
+                        <li class="mb-1">小計<span>NT$ 2,700</span></li>
+                        <li class="mb-2">運費<span>NT$ 300</span></li>
+                        <li class="total mb-2">總計<span>NT$ 3,000</span></li>
+                    </ul>
+                </div>
+                <div class="list-shop">
+                    <h2 class="title">購物清單</h2>
+                    <ul>
+                        <li><img src="https://bit.ly/2QvsT63" alt="p-1">
+                            <div>
+                                <p>焦糖馬卡龍 (2)</p>
+                                <p class="price">NT$ 900</p>
+                            </div>
+                        </li>
+                        <li><img src="https://bit.ly/2zBDAxX" alt="p-2">
+                            <div>
+                                <p>焦糖馬卡龍 (2)</p>
+                                <p class="price">NT$ 900</p>
+                            </div>
+                        </li>
+                        <li><img src="https://bit.ly/2zKOP7w" alt="p-3">
+                            <div>
+                                <p>焦糖馬卡龍 (2)</p>
+                                <p class="price">NT$ 900</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="email">
+        <ul>
+            <li><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-light.svg" alt="logo-light" width="40px"></li>
+            <li>
+                <p>訂閱你我的甜蜜郵件</p>
+            </li>
+        </ul>
+        <form class="inputMail" action="#">
+            <img class="mail-icon" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/mail-24px.png?raw=true" alt="mail-24px">
+            <input class="mail-text" type="text" name="email">
+            <input class="submit-btm" type="image" name="btm" img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/arrow_forward-24px.png" width="16px">
+        </form>
+    </div>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="dataleft">
+                <img class="logo-sm-dark" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg" alt="logotype-sm-dark" width="171px" height="27px">
+                <ul class="contact">
+                    <li>07-1234-5678</li>
+                    <li>sweetaste@email.com</li>
+                    <li>800 高雄市新興區幸福路 520 號</li>
+                </ul>
+                <ul class="web">
+                    <li>
+                        <a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/ic-line%40.svg" alt="@" width="32px"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/ic-facebook.svg" alt="fb" width="32px"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="dataright">
+                <img src="images/quote-吃甜點.svg" alt="quote-吃甜點" width="60px">
+                <p>© 2018 Sweetaste* All Rights Reserved</p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

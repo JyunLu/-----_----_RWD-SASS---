@@ -1,0 +1,6 @@
+@import "variable"; // 變數  
+@import "reset"; // reset.css  
+@import "mixin"; // 所有全域變數與 Mixin
+@import "layout"; // 共同框架,第一層 *header、footer、logo記得回首頁
+@import "page/index"; //首頁
+@import "page/checkout"; //寄送發票頁

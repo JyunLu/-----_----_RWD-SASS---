@@ -1,0 +1,269 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.25;
+}
+
+/*utilities 通用類別*/
+
+.mb-1 {
+  margin-bottom: 8px;
+}
+.mt-1 {
+  margin-top: 8px;
+}
+
+.mb-2 {
+  margin-bottom: 16px;
+}
+
+.mb-3 {
+  margin-bottom: 20px;
+}
+
+.mb-4 {
+  margin-bottom: 30px;
+}
+
+.mb-5 {
+  margin-bottom: 60px;
+}
+
+.mt-4 {
+  margin-top: 30px;
+}
+//Icon
+.material-icons.md-light {
+  color: rgba(255, 255, 255, 1);
+}
+
+.d-flex {
+  display: flex;
+}
+
+//Container
+.container {
+  margin: 0 auto;
+  max-width: 940px;
+  @include pad {
+    max-width: 768px;
+    padding: 0px 30px;
+  }
+  @include mobile {
+    max-width: 375px;
+    padding: 0px ;
+  }
+}
+
+// Header
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0px;
+  position: relative;
+  @include mobile {
+    padding: 33px 30px;
+    margin: 0px;
+  }
+  .menu-toggler {
+    display: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    @include mobile {
+      display: block;
+    }
+  }
+  h1 a {
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/student-week1/logo-all-dark.svg);
+    width: 220px;
+    height: 40px;
+    display: block;
+    background-repeat: no-repeat;
+    @include hide-text;
+    @include mobile {
+      background-image: url(https://hexschool.github.io/webLayoutTraining1st/student-week1/logotype-sm-dark.svg);
+      width: 114px;
+      height: 18px;
+    }
+  }
+  &-collapse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include mobile {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: white;
+        overflow: hidden;
+        transition: all 0.8s;
+      }
+    }
+    .menu-item {
+      a {
+        display: block;
+        text-align: center;
+        color: $text-primary;
+        padding: 10px 29.75px 8px 29.75px;
+        @include mobile {
+          padding: 10px 0px;
+        }
+      }
+      a:hover {
+        color: white;
+        background: $text-dark;
+        opacity: 0.5;
+      }
+      @include mobile {
+        width: 100%;
+      }
+    }
+    .header-link {
+      padding-left: 50.25px;
+      @include mobile {
+        padding-left: 0px;
+      }
+    }
+  }
+  .active {
+    max-height: 200px;
+  }
+}
+
+.email {
+  background: $text-primary;
+  padding: 38px 122px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  ul {
+    display: flex;
+    align-items: center;
+  }
+  li {
+    img {
+      margin-right: 20px;
+    }
+    p {
+      color: #eaf0ed;
+      font-size: 24px;
+    }
+  }
+  .inputMail {
+    display: flex;
+    .mail-text {
+      border: none;
+      background: #eaf0ed;
+      padding: 0px 15px;
+    }
+    .mail-icon {
+      padding: 16px 20px;
+      color: #3f5d45;
+      background: #eaf0ed;
+      border: none;
+    }
+    .submit-btm {
+      padding: 20px 24px;
+      width: 64px;
+      height: 56px;
+      background: #ffe180;
+      color: #3f5d45;
+      border: none;
+    }
+    .mail-text:focus,
+    .submit-btm:focus {
+      outline: 0;
+    }
+  }
+}
+
+// footer
+.footer {
+  @include pad {
+    padding: 0px;
+  }
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 122px;
+  background: #eaf0ed;
+  @include pad{
+    padding: 30px 40px
+
+  }
+  @include mobile {
+    flex-direction: column;
+    padding: 40px 30px 30px;
+  }
+}
+
+.dataleft {
+  .logo-sm-dark {
+    margin-bottom: 115px;
+    @include pad {
+      margin-bottom: 40px;
+    }
+  }
+  .contact {
+    margin-bottom: 30px;
+    color: #3f5d45;
+    font-size: 16px;
+    line-height: 24px;
+    @include pad {
+      margin-bottom: 37px;
+    }
+  }
+  .web {
+    display: flex;
+    img {
+      margin-right: 8px;
+    }
+    @include pad {
+      margin-bottom: 23px;
+    }
+  }
+}
+
+.dataright {
+  color: #3f5d45;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  @include mobile {
+    display: block;
+    img {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .email {
+    flex-direction: column;
+    padding: 30px 30px;
+  }
+  .email ul {
+    margin-bottom: 30px;
+  }
+}

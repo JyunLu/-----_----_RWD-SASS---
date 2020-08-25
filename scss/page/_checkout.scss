@@ -1,0 +1,132 @@
+.content-checkout {
+  max-width: 780px;
+  margin: 0 auto 60px;
+  align-items: flex-start;
+  .col-l {
+    width: 58.9%;
+    margin-right: 20px;
+  }
+  .col-r {
+    width: 38%;
+  }
+  .row1 {
+    padding: 0px 40px;
+  }
+  @include mobile {
+    margin: 0 auto;
+    .col-l {
+      width: 100%;
+      margin-right: 0px;
+    }
+    .col-r {
+      display: none;
+    }
+    .row1 {
+      padding: 0px 30px;
+    }
+  }
+}
+
+.col-l {
+  background: $text-primary;
+  color: $text-lighter;
+  font-weight: bold;
+  .title {
+    padding-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      font-size: 2.25rem;
+    }
+    ul {
+      width: 153px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .choices {
+    li {
+      width: 50%;
+      text-align: center;
+      border: 1px $text-lighter solid;
+      font-size: 20px;
+
+      a {
+        padding: 14px 0px;
+        display: block;
+        color: $text-lighter;
+      }
+      .invoice-e {
+        background: $text-lighter;
+        color: $text-primary;
+      }
+    }
+  }
+
+  form {
+    h3 {
+      font-size: 20px;
+    }
+    input {
+      width: 100%;
+      padding: 17px 20px;
+      background: $text-lighter;
+      border: 0px;
+    }
+  }
+  .submit {
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    background: $text-secondary;
+    border: 0px;
+    a {
+      padding: 19px 0px;
+      display: block;
+      color: $text-primary;
+    }
+  }
+  .submit:focus {
+    outline: none;
+  }
+}
+.col-r {
+  color: $text-light;
+  .title {
+    font-size: 24px;
+    color: $text-light;
+    background: $text-lighter;
+    padding: 16px 0px;
+    text-align: center;
+    font-weight: bold;
+  }
+  ul {
+    padding: 16px 20px 0px;
+    border: 1px solid #eaf0ed;
+  }
+  .list-order {
+    span {
+      float: right;
+    }
+    .total {
+      font-size: 20px;
+    }
+  }
+  .list-shop {
+    li {
+      display: flex;
+      margin-bottom: 16px;
+      align-items: center;
+      img {
+        width: 120px;
+        height: 80px;
+        overflow: hidden;
+        object-fit: cover;
+        margin-right: 20px;
+      }
+      .price {
+        font-size: 20px;
+      }
+    }
+  }
+}

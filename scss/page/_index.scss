@@ -1,0 +1,166 @@
+/* 滿版banner */
+
+.banner {
+    margin-bottom: 60px;
+}
+
+
+/* 選單&商品 */
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.products {
+    width: 66%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.category {
+    width: 32%;
+    text-align: center;
+    font-size: 24px;
+}
+
+.category .title {
+    background: #3F5D45;
+    padding: 16px 0px;
+    color: white;
+}
+
+.category a {
+    padding: 16px 0px;
+    display: block;
+    color: #3F5D45;
+    border: 1px solid #EAF0ED;
+}
+
+.category a:hover {
+    background: #EAF0ED;
+}
+
+.product-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.product-item .favorite {
+    position: absolute;
+    top: 19px;
+    left: 258px;
+}
+
+.product-item .tag {
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+    width: 36px;
+    background: #3F5D45;
+    padding: 10px 10px;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+}
+
+.product-item a {
+    font-size: 24px;
+    line-height: 33px;
+    color: #3F5D45;
+    padding: 16px 0px;
+    text-align: center;
+    background: #EAF0ED;
+    font-weight: bold;
+    display: block;
+}
+
+.product-item p {
+    font-size: 20px;
+    font-weight: lighter;
+    color: #3F5D45;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #EAF0ED;
+    align-items: center;
+    padding-left: 33px;
+}
+
+.product-item p span {
+    padding-left: 58px;
+    font-weight: bold;
+    padding: 14px 20px 14px 25px;
+    border-left: 1px solid #EAF0ED;
+}
+
+// pages
+.pages {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 60px;
+}
+
+.pages img {
+    padding: 18px;
+    border: 1px solid #EAF0ED;
+}
+
+.pages {
+    a {
+    font-size: 20px;
+    display: block;
+    color: #3F5D45;
+    border: 1px solid #EAF0ED;
+    }
+    .num{
+        padding: 16px 24px;
+    }
+    span{
+        padding: 18px 18px;
+    }
+}
+
+
+
+.pages a:hover {
+    color: white;
+    background: #3F5D45;
+}
+
+@media (max-width:992px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .products {
+        width: 100%;
+        justify-content: space-around;
+        padding: 0px 15px;
+    }
+    .product-item {
+        margin: 0 15px 30px;
+    }
+    .category {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .category ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .category li {
+        width: 50%;
+    }
+    .pages {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .category li {
+        width: 100%;
+    }
+}
